@@ -2,7 +2,7 @@
 
 ## Overview
 
-You might have worked with version control software in the past, or this might be your first rodeo. Either way, we're going to teach you enough about `git` to be dangers.
+You might have worked with version control software in the past, or this might be your first rodeo. Either way, we're going to teach you enough about `git` to be dangerous.
 
 ![dangerous](http://i.giphy.com/UlzvY53VQpn0c.gif)
 
@@ -10,7 +10,7 @@ This brief overview covers the concepts of cloning, forking, committing, and upd
 
 ## git
 
-`git` is a little library that manages your source code's versions. It helps you rollback changes or merge in changes from someone else – it's indispensable for working in teams, but you can use it to keep track of solo work too. Learn leans heavily on git (and [GitHub](https://github.com)) because it's such a powerful little library.
+`git` is a library that manages your source code. It helps you roll back changes or merge in changes from somewhere/someone else – it's indispensable for working in teams, but you can use it to keep track of solo work, too. Learn leans heavily on git (and [GitHub](https://github.com)) because it's such a powerful library.
 
 ## Cloning
 
@@ -20,7 +20,7 @@ This brief overview covers the concepts of cloning, forking, committing, and upd
 git clone git@github.com:learn-co-curriculum/github-basics.git
 ```
 
-This will create a directory called `github-basics` as a subdirectory of your the directory in which you issue the `git clone` command. Now try this:
+This will create a directory called `github-basics` as a subdirectory of the directory in which you issue the `git clone` command. Now try this:
 
 ```bash
 git clone git@github.com:learn-co-curriculum/github-basics.git my-github-basics
@@ -28,7 +28,7 @@ git clone git@github.com:learn-co-curriculum/github-basics.git my-github-basics
 
 Now you've cloned the same source code into a directory called `my-github-basics`. Pretty sweet, eh?
 
-If there are changes made to the source that you've cloned (called `master` by convention), you can make a pull:
+If there are changes made to the source that you've cloned (called `master` by convention), you can `pull`:
 
 ```bash
 cd github-basics
@@ -39,13 +39,13 @@ from the root of your local copy to merge those changes in.
 
 ## Forking
 
-Forking isn't necessarily built into git, but is rather a feature of GitHub. It lets you create an exact copy of a repository under your name or organization – this way, you can make changes to your _fork_ without modifying the canonical version that so many folks depend on. Learn uses forks for submitting labs.
+Forking is a feature of GitHub. It lets you create an exact copy of a repository under your name or organization – this way, you can make changes to your _fork_ without modifying the canonical version that so many folks depend on. Learn uses forks for submitting labs.
 
-To fork a repository, simply click the "Fork" button in the top right corner of the repository page. Try it with this repo.
+To fork a repository, simply click the "Fork" button in the top right corner of the repository page. Try it with this repo. (You might need to click on the GitHub icon in the upper right hand corner of this lesson to go to the source.)
 
 You should see a modal that lets you select your destination organization. Usually you'll want to fork to your personal profile.
 
-Once you've forked the repo, you can clone your fork of it. Cloning sets up the `master` branch automatically ("branches" are basically namespaces for given changes in the source code). You can pull in changes from your fork with a simple `git pull`; if you'd like to pull in changes from the canonical version, you can track changes there, too – just add it as a remote:
+Once you've forked the repo, you can clone your fork of it. Cloning sets up the `master` branch automatically ("branches" are basically namespaces for sets of changes in the source code). You can pull in changes from your fork with a simple `git pull`; if you'd like to pull in changes from the canonical version, you can track changes there, too – just add it as a remote:
 
 ```bash
 git remote add upstream git@github.com:[organization]/[repo].git
@@ -78,8 +78,10 @@ Finally, let's update the remote repository:
 git push
 ```
 
-Lastly, `git push` pushes your changes up to the remote repository. If you check your fork, you should see the changes there.
+`git push` pushes your changes up to the remote repository. If you check your fork, you should see the changes there.
 
 ## Resources
 
 - [git](https://git-scm.com/): This book is an excellent resource for everything git-related.
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/github-basics'>GitHub Basics</a> on Learn.co and start learning to code for free.</p>
